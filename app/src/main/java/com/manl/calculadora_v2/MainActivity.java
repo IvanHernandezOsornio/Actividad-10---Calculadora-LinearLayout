@@ -1,9 +1,11 @@
-package com.manl.calculadora_ii;
+package com.manl.calculadora_v2;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+
+import com.manl.calculadora_ii.R;
 
 public class MainActivity extends AppCompatActivity {
     private float numero1;

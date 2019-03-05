@@ -1,4 +1,4 @@
-package com.manl.calculadora_ii;
+package com.manl.calculadora_v2;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
