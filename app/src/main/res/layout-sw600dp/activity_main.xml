@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="32dp"
+    android:background="@color/colorPrimaryDark"
+    android:layout_marginTop="90dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/tv_numero1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="@string/text_view1"
+            android:textColor="@android:color/background_dark"
+            android:textSize="38sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.224"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.126" />
+
+        <EditText
+            android:id="@+id/et_numero1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:ems="4"
+            android:inputType="numberDecimal"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorNum"
+            android:textSize="28dp"
+            tools:ignore="Autofill,LabelFor,SpUsage"
+            tools:layout_editor_absoluteX="170dp"
+            tools:layout_editor_absoluteY="128dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/tv_numero2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="@string/text_view2"
+            android:textColor="@android:color/background_dark"
+            android:textSize="38sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.224"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.192" />
+
+        <EditText
+            android:id="@+id/et_numero2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:ems="4"
+            android:inputType="numberDecimal"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorNum"
+            android:textSize="28dp"
+            tools:ignore="Autofill,LabelFor,SpUsage"
+            tools:layout_editor_absoluteX="169dp"
+            tools:layout_editor_absoluteY="75dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_suma"
+            android:layout_width="244dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="4dp"
+            android:background="@color/colorAccent"
+            android:fontFamily="casual"
+            android:onClick="sumar"
+            android:text="+"
+            android:textSize="30sp"
+            tools:ignore="ButtonStyle,HardcodedText,OnClick,RtlHardcoded"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+        <Button
+            android:id="@+id/bt_resta"
+            android:layout_width="244dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="4dp"
+            android:background="@color/colorAccent"
+            android:fontFamily="casual"
+            android:onClick="restar"
+            android:text="-"
+            android:textSize="30sp"
+            tools:ignore="ButtonStyle,HardcodedText,OnClick,RtlHardcoded"
+            tools:layout_editor_absoluteX="179dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_modulo"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/colorAccent"
+            android:fontFamily="cursive"
+            android:onClick="modulo"
+            android:text="%"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText,OnClick"
+            tools:layout_editor_absoluteX="179dp"
+            tools:layout_editor_absoluteY="470dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_multiplicacion"
+            android:layout_width="244dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="4dp"
+            android:background="@color/colorAccent"
+            android:fontFamily="casual"
+            android:onClick="multiplicar"
+            android:text="*"
+            android:textSize="30sp"
+            tools:ignore="ButtonStyle,HardcodedText,OnClick,RtlHardcoded"
+            tools:layout_editor_absoluteX="295dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+        <Button
+            android:id="@+id/bt_dividir"
+            android:layout_width="244dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="4dp"
+            android:background="@color/colorAccent"
+            android:fontFamily="casual"
+            android:onClick="dividir"
+            android:text="/"
+            android:textSize="30sp"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="483dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/tv_resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="@string/text_result"
+            android:textColor="@android:color/background_dark"
+            android:textSize="38sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.224"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.301" />
+
+        <EditText
+            android:id="@+id/et_resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:ems="4"
+            android:enabled="false"
+            android:inputType="numberDecimal"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorResult"
+            android:textSize="28dp"
+            tools:ignore="Autofill,LabelFor,SpUsage" />
+    </LinearLayout>
+
+</LinearLayout>

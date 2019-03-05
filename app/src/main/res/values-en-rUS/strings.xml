@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ivan H/O......calculator_v2</string>
+    <string name="text_view1">Number 1:</string>
+    <string name="text_view2" translatable="false">Number 2:</string>
+    <string name="text_result">Result:</string>
+</resources>
